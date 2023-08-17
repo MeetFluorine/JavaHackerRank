@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        String B=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
+        System.out.println(A.length()+B.length());
+        if(A.compareTo(B)>0)
+        {
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
+        }
+        String Afs = A.substring(0, 1);
+        String Bfs = B.substring(0, 1);
+        Afs= Afs.toUpperCase();
+        Bfs = Bfs.toUpperCase();
+        String restOfWordA = A.substring(1);
+        String restOfWordB = B.substring(1);
+        String wordA =Afs+ restOfWordA;
+        String wordB =Bfs+ restOfWordB;
+          
+        System.out.println(wordA+ " "+wordB);
+        
+
+    }
+}
+
